@@ -4,52 +4,49 @@
 	padding: 0 0;
 	box-sizing:	border-box;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 body {
 	background:#04005E; display: flex; align-items: flex-end; justify-content: center; min-height: 100vh;
+	
+	overflow: hidden;
+	position: fixed
 	;
 }
 
 .PageContent {
 	display: block;
 	width: 60vw;
-	top: 10vh;
-
-	position: absolute;
+	top: 5vh;
 	text-align: center;
-	color: red;
-	border: rgb(128, 0, 0) solid 2px;
-	max-width: 1000px;
+	position: absolute;
+}
+.PageContent p {
+	text-align: justify;
+	color: rgb(255, 255, 255);
+	text-shadow: 0 0 3px black;
+	font-size: 1.5rem;
 }
 .PageContent h1 {
 	text-align: center;
-	/* align-items: center;  */
 	color: rgb(255, 255, 255);
-	font-size: 1.5rem;
+	font-size: 3rem;
+	padding-bottom: 10px;
 }
 .PageContent img {
 	width: 100%;
-	/* width: 60vw; */
 	padding-top: 2vh;
-	/* min-height: 200px; */
 	margin: 0 auto;
-	max-width: 600px;
-	border: green solid 2px;
+	max-width: 800px;
 }
-/* E92EFB  FF2079  440BD4  04005E   */
 nav {
-	display: flex;
-	align-items: flex-end;
-	justify-content: flex-start;
+	display: fixed;
 	background:#9c05b4;
-	/* background:hsl(0, 100%, 50%) */
 	width: 100vw;
-
 }
 ul {
-	/* background:#022f95; */
+	background:rgb(106, 0, 255);
 	border-radius: 5px;
 	position: relative;
  	box-shadow: 0 5px 20px black; 
@@ -83,8 +80,9 @@ li {
 	
 }
 .ion-icon img{
+	/* position: absolute; */
 	width: 30px;
-	/* max-width: 125%; */
+	max-width: 4.5vh;
 }
 ul li.ion-icon:nth-last-child(n+3) img {
 	/* filter: invert(100%); */
@@ -98,7 +96,7 @@ ul li.ion-icon:nth-child(n+5) img {
 .bgLighter {
 	width:20vw;
 	height: 6vh;
-	background:rgba(255, 62, 216, 1);
+	background:rgba(255, 62, 216, 0.8);
 	/* background:rgb(108, 11, 89); */
 	/* #FF2079; */
 	position: absolute;
@@ -117,3 +115,16 @@ ul li.ion-icon:nth-child(n+5) img {
 .li.iii.active  ~ .bgLighter {left:  40%;}
 .li.iiii.active ~ .bgLighter {left:  60%;}
 .li.iiiii.active ~ .bgLighter {left:  80%;}
+
+
+@media screen and (max-width: 700px) {
+	.PageContent {
+		top: 10vh;
+		width: 92vw;
+	}
+	.PageContent p {
+		text-align:justify;
+		/* color: rgb(255, 255, 255); */
+		text-shadow: 0 0 3px black;
+		font-size: 1.2rem; }
+}	
