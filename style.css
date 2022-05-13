@@ -12,27 +12,31 @@ body {
 	;
 }
 
-header {
+.PageContent {
+	display: block;
 	width: 60vw;
-	top: 5vh;
+	top: 10vh;
+
 	position: absolute;
 	text-align: center;
-	align-items: center; 
+	color: red;
+	border: rgb(128, 0, 0) solid 2px;
+	max-width: 1000px;
+}
+.PageContent h1 {
+	text-align: center;
+	/* align-items: center;  */
 	color: rgb(255, 255, 255);
 	font-size: 1.5rem;
 }
-.content {
-	width: 60vw;
-	top: 10vh;
-	position: absolute;
-	text-align: center;
-	align-items: center; 
-	color: red;
-}
-.content img {
-	padding-top: 3vh;
-	width: 50%;
-	max-height: 500px;
+.PageContent img {
+	width: 100%;
+	/* width: 60vw; */
+	padding-top: 2vh;
+	/* min-height: 200px; */
+	margin: 0 auto;
+	max-width: 600px;
+	border: green solid 2px;
 }
 /* E92EFB  FF2079  440BD4  04005E   */
 nav {
@@ -45,15 +49,12 @@ nav {
 
 }
 ul {
-	/* height: 60px; */
 	/* background:#022f95; */
 	border-radius: 5px;
 	position: relative;
- 	box-shadow: 0 5px 20px black; display: flex;
-	/* align-items: center; */
-	/* justify-content: center; */
+ 	box-shadow: 0 5px 20px black; 
+	display: flex;
 	z-index: 3;
-	/* width: 25vw; */
 }
 
 li {
@@ -83,6 +84,7 @@ li {
 }
 .ion-icon img{
 	width: 30px;
+	/* max-width: 125%; */
 }
 ul li.ion-icon:nth-last-child(n+3) img {
 	/* filter: invert(100%); */
@@ -96,7 +98,7 @@ ul li.ion-icon:nth-child(n+5) img {
 .bgLighter {
 	width:20vw;
 	height: 6vh;
-	background:rgba(255, 62, 216, 0.648);
+	background:rgba(255, 62, 216, 1);
 	/* background:rgb(108, 11, 89); */
 	/* #FF2079; */
 	position: absolute;
