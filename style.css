@@ -77,7 +77,6 @@ li {
 	align-items: center;
 	justify-content: center;
 	/* border: red solid 2px; */
-	
 }
 .ion-icon img{
 	/* position: absolute; */
@@ -118,13 +117,32 @@ ul li.ion-icon:nth-child(n+5) img {
 
 
 @media screen and (max-width: 700px) {
+	
 	.PageContent {
 		top: 10vh;
 		width: 92vw;
 	}
+
 	.PageContent p {
 		text-align:justify;
 		/* color: rgb(255, 255, 255); */
 		text-shadow: 0 0 3px black;
-		font-size: 1.2rem; }
+		font-size: 1.2rem;
+	}
+		
+	li {
+		height: 14vh;
+		/* border: red solid 3px; */
+	}
+	.ion-icon {
+		/* width: 33px; height: 33px; color: white solid 3px;; z-index: 5; */
+		/* vertical-align:middle; */
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		padding-top: 0.5vh;
+		/* border: red solid 2px; */
+		
+	}
+
 }	
