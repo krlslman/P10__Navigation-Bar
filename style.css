@@ -131,7 +131,7 @@ ul li.ion-icon:nth-child(n+5) img {
 	}
 		
 	li {
-		height: 14vh;
+		height: 12vh;
 		/* border: red solid 3px; */
 	}
 	.ion-icon {
@@ -140,7 +140,7 @@ ul li.ion-icon:nth-child(n+5) img {
 		display: flex;
 		align-items: flex-start;
 		justify-content: center;
-		padding-top: 0.5vh;
+		padding-top: 0.7vh;
 		/* border: red solid 2px; */
 		
 	}
