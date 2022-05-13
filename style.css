@@ -4,14 +4,14 @@
 	padding: 0 0;
 	box-sizing:	border-box;
 }
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
-} */
+}
 body {
 	background:#04005E; display: flex; align-items: flex-end; justify-content: center; min-height: 100vh;
 	
 	overflow: hidden;
-	position: fixed
+	/* position: fixed */
 	;
 }
 
@@ -41,7 +41,7 @@ body {
 	max-width: 800px;
 }
 nav {
-	display: fixed;
+	/* display: fixed; */
 	background:#9c05b4;
 	width: 100vw;
 }
