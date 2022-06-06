@@ -8,9 +8,15 @@
     display: none;
 }
 body {
-	background:#04005E; display: flex; align-items: flex-end; justify-content: center; min-height: 100vh;
+	background:#04005E;
 	
-	overflow: hidden;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	text-align: center;
+	min-height: 100vh;
+	
+	/* overflow: hidden; */
 	/* position: fixed */
 	;
 }
